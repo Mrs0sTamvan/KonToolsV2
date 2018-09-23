@@ -1,0 +1,158 @@
+#!/bin/bash
+#Mr.s0s.X..!?/.>#
+
+#variables
+b='\033[1m'
+u='\033[4m'
+bl='\E[30m'
+r='\E[31m'
+g='\E[32m'
+bu='\E[34m'
+m='\E[35m'
+c='\E[36m'
+w='\E[37m'
+endc='\E[0m'
+enda='\033[0m'
+blue='\e[1;34m'
+cyan='\e[1;36m'
+red='\e[1;31m'
+spath="$( cd "$( dirname $0 )" && pwd )"
+
+cowsay -f dragon "KUY" | lolcat
+figlet -f slant "KONTOOLSV3" | lolcat
+
+echo "•••••••••••••••••••••••••••••••••••••••••" | lolcat
+echo "Tools    : KONTOOLS V3" | lolcat
+echo "Creator  : ./Mr.s0s" | lolcat
+echo "Email    : xhubiloxs357@gmail.com" | lolcat
+echo "whatsapp : 08878819132" | lolcat
+echo "Team     : G4L4XY CYB3R T34M" | lolcat
+echo "••••••••••••••••• GCT •••••••••••••••••••" | lolcat
+echo ""
+
+###################################################
+# CTRL C
+###################################################
+trap ctrl_c INT
+ctrl_c() {
+clear
+echo "[#]> (Ctrl + C ) Detected, Trying To Exit ... " | lol$
+sleep 1
+echo ""
+echo "[#]> Terima kasih sudah make tools saya ... " | lolcat
+sleep 1
+echo ""
+echo "[#]> Mr.s0s tamvan kan ... " | lolcat
+sleep 6
+exit
+}
+
+echo ""
+echo "+++++++++++++++++++++++++++++++++++++++++" | lolcat
+echo "[01] Lazymux" | lolcat
+echo "+++++++++++++++++++++++++++++++++++++++++" | lolcat
+echo "[02] Tools TU4N BADUT" | lolcat
+echo "+++++++++++++++++++++++++++++++++++++++++" | lolcat
+echo "[03] Tools-X " | lolcat
+echo "+++++++++++++++++++++++++++++++++++++++++" | lolcat
+echo "[04] Tools B4DJ1N64N " | lolcat
+echo "+++++++++++++++++++++++++++++++++++++++++" | lolcat
+echo "[05] KonToolsV1 " | lolcat
+echo "+++++++++++++++++++++++++++++++++++++++++" | lolcat
+echo "[06] KonToolsV2 " | lolcat
+echo "+++++++++++++++++++++++++++++++++++++++++" | lolcat
+echo "[07] Tools Mr.Cakil " | lolcat
+echo "+++++++++++++++++++++++++++++++++++++++++" | lolcat
+echo "[08] Keluar cuy " | lolcat
+echo "+++++++++++++++++++++++++++++++++++++++++" | lolcat
+echo ""
+echo "Mr.s0s [pilih nomornya] " | lolcat
+read -p "root@localhost~: " pil ;
+
+#Lazymux
+
+case $pil in
+1) git clone https://github.com/Gameye98/Lazymux
+echo "${y} Installer Lazymux..."
+echo "${y} cd Lazymux"
+echo "${y} python2 lazymux.py"
+cd /data/data/com.termux/files/home/Lazymux/
+python2 /data/data/com.termux/files/home/Lazymux/ lazymux.py
+
+;;
+
+#ToolsInstaller
+
+2) git clone https://github.com/TUANB4DUT/ToolsInstaller
+echo "${y} Installer ToolsInstaller..."
+echo "${y} cd ToolsInstaller"
+echo "${y} sh Tuanb4dut.sh"
+cd /data/data/com.termux/files/home/ToolsInstaller/
+python2 /data/data/com.termux/files/home/ToolsInstaller/Tuanb4dut.sh
+
+;;
+
+#Toos-X
+
+3) git clone https://github.com/Rajkumrdusad/Tool-X
+echo "${y} Installer Tool-X..."
+echo "${y} cd Tool-X"
+echo "${y} sh install.aex"
+cd /data/data/com.termux/files/home/Tool-X
+bash /data/data/com.termux/files/home/Tool-X/install.aex
+
+;;
+
+#BAJINGANv6
+
+4) git clone https://github.com/DarknessCyberTeam/BAJINGANv6
+echo "${y} installer BAJINGANv6..."
+echo "${y} cd BAJINGANv6"
+echo "${y} sh BAJINGAN.sh"
+cd /data/data/com.termux/files/home/BAJINGANv6
+bash /data/data/com.termux/files/home/BAJINGANv6/ BAJINGAN.sh
+
+;;
+
+#Ngentod
+
+5) git clone https://github.com/Mrs0sTamvan/Ngentod
+echo "${y} installer Ngentod..."
+echo "${y} cd Ngentod"
+echo "${y} sh Mrs0s.sh"
+cd /data/data/com.termux/files/home/Ngentod
+bash /data/data/com.termux/files/home/Ngentod/Mrs0s.sh
+
+;;
+
+#KonToolsV2
+
+6) git clone https://github.com/Mrs0sTamvan/KonToolsV2
+echo "${y} installer KonToolsV2..."
+echo "${y} cd KonToolsV2"
+echo "${y} ./KontoolsV2"
+cd /data/data/com.termux/files/home/KonToolsV2
+bash /data/data/com.termux/files/home/KonToolsV2/KontoolsV2
+
+;;
+
+#mrcakil
+
+7) git clone git clone https://github.com/Mrcakil/mrcakil
+echo "${y} installer mrcakil..."
+echo "${y} cd mrcakil"
+echo "${y} chmod 777 tools"
+echo "${y} ./tools"
+cd /data/data/com.termux/files/home/mrcakil
+bash /data/data/com.termux/files/home/mrcakil/tools
+
+;;
+
+8) echo "Creator By Mr.s0s" | lolcat
+exit
+;;
+
+*) echo "Gua Tamvan Kan"
+esac
+done
+done
